@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #282828;
+  --sidebar-bg: #f0f4f9;
+  --card-bg: #f0f4f9;
+  --search-bg: #f0f4f9;
+  --sidebar-hover: #e2e6eb;
+  --primary-btn: #e6eaf1;
+  --primary-text: #6b7280;
+}
+
+.dark-theme {
+  --bg-color: rgb(51, 51, 51);
+  --text-color: white;
+  --sidebar-bg: #1a1a1a;
+  --card-bg: rgb(51, 51, 51);
+  --search-bg: rgb(70, 70, 70);
+  --sidebar-hover: #333333;
+  --primary-btn: #333333;
+  --primary-text: #b0b0b0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  animation: fadeIn 1.5s;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@keyframes fadeIn {
+  0%{
+opacity: 0;
+  }
+  100%{
+   opacity: 1;
+  }
+}
+
+#root.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-theme .sidebar {
+  background-color: #1a1a1a;
+}
+
+.dark-theme .sidebar .recent-entry {
+  color: #e0e0e0;
+}
+
+.dark-theme .sidebar .recent-entry:hover {
+  background-color: #333333;
+}
+
+.dark-theme .sidebar .new-chat {
+  background-color: #333333;
+  color: #ffffff;
+}
