@@ -80,6 +80,5 @@ async function runChat(prompt) {
     return mockResponses.error;
   }
 }
-}
 
 export default runChat;
